@@ -1,0 +1,123 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  size?: 'default' | 'large';
+}
+
+const { post, size = 'default' } = Astro.props;
+const { slug, data } = post;
+const { title, description, pubDate, category, image, imageAlt } = data;
+
+const formattedDate = pubDate.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<article class:list={['post-card', { 'post-card--large': size === 'large' }]}>
+  {image && (
+    <a href={`/blog/${slug}`} class="post-card__image-link" tabindex="-1" aria-hidden="true">
+      <div class="post-card__image-wrap">
+        <img
+          src={image}
+          alt={imageAlt ?? title}
+          loading="lazy"
+          decoding="async"
+          width="800"
+          height="500"
+        />
+      </div>
+    </a>
+  )}
+  <div class="post-card__body">
+    <div class="post-card__meta">
+      <a href={`/blog?category=${encodeURIComponent(category)}`} class="post-card__category">{category}</a>
+      <time datetime={pubDate.toISOString()} class="post-card__date">{formattedDate}</time>
+    </div>
+    <h2 class="post-card__title">
+      <a href={`/blog/${slug}`}>{title}</a>
+    </h2>
+    <p class="post-card__desc">{description}</p>
+    <a href={`/blog/${slug}`} class="post-card__read">Read →</a>
+  </div>
+</article>
+
+<style>
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .post-card__image-wrap {
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: var(--color-bg-alt);
+  }
+  .post-card__image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .post-card:hover .post-card__image-wrap img {
+    transform: scale(1.02);
+  }
+
+  .post-card__body { display: flex; flex-direction: column; gap: 0.5rem; }
+
+  .post-card__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .post-card__category {
+    color: var(--color-accent);
+    font-weight: 500;
+  }
+  .post-card__category:hover { text-decoration: underline; }
+
+  .post-card__date { color: var(--color-text-muted); }
+
+  .post-card__title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--color-accent);
+    margin: 0;
+  }
+  .post-card__title a:hover { text-decoration: underline; }
+
+  .post-card__desc {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .post-card__read {
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+    color: var(--color-accent);
+    font-weight: 500;
+    margin-top: 0.25rem;
+  }
+  .post-card__read:hover { text-decoration: underline; }
+
+  /* Large variant used in hero grid */
+  .post-card--large .post-card__title {
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+  }
+</style>

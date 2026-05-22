@@ -1,0 +1,153 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PostCard from '@/components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const sorted = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const categories = ['All', ...new Set(sorted.map(p => p.data.category))];
+
+// Active category from query param (SSG: we handle client-side)
+---
+
+<BaseLayout
+  title="Writing"
+  description="All essays on Avinovo — covering lifestyle, books, home, and the art of living with intention."
+>
+  <section class="blog-listing">
+    <div class="container">
+      <header class="listing-header">
+        <h1 class="listing-title">Writing</h1>
+        <p class="listing-sub">
+          {sorted.length} {sorted.length === 1 ? 'essay' : 'essays'} on living well.
+        </p>
+      </header>
+
+      <!-- Category filter (client-side) -->
+      <div class="filter-bar" role="tablist" aria-label="Filter by category">
+        {categories.map(cat => (
+          <button
+            role="tab"
+            class="filter-btn"
+            data-category={cat}
+            aria-selected={cat === 'All' ? 'true' : 'false'}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      <!-- Posts -->
+      <div class="posts-grid" id="posts-grid">
+        {sorted.map(post => (
+          <div class="post-cell" data-category={post.data.category}>
+            <PostCard post={post} />
+          </div>
+        ))}
+      </div>
+
+      <p class="no-results" id="no-results" hidden>No posts in this category yet.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const cells = document.querySelectorAll<HTMLDivElement>('.post-cell');
+  const noResults = document.getElementById('no-results') as HTMLParagraphElement;
+
+  function filter(category: string) {
+    let visible = 0;
+    cells.forEach(cell => {
+      const match = category === 'All' || cell.dataset.category === category;
+      cell.hidden = !match;
+      if (match) visible++;
+    });
+    noResults.hidden = visible > 0;
+
+    buttons.forEach(btn => {
+      btn.setAttribute('aria-selected', btn.dataset.category === category ? 'true' : 'false');
+    });
+
+    // Update URL without page reload
+    const url = new URL(window.location.href);
+    if (category === 'All') {
+      url.searchParams.delete('category');
+    } else {
+      url.searchParams.set('category', category);
+    }
+    history.replaceState({}, '', url.toString());
+  }
+
+  // Init from URL param
+  const initCat = new URL(window.location.href).searchParams.get('category') ?? 'All';
+  filter(initCat);
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => filter(btn.dataset.category ?? 'All'));
+  });
+</script>
+
+<style>
+  .blog-listing { padding-block: var(--space-xl) var(--space-2xl); }
+
+  .listing-header { margin-bottom: var(--space-xl); }
+
+  .listing-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+  }
+
+  .listing-sub {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: var(--space-xl);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--space-md);
+  }
+
+  .filter-btn {
+    padding: 0.375rem 0.875rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    background: none;
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: var(--font-sans);
+  }
+
+  .filter-btn:hover,
+  .filter-btn[aria-selected="true"] {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-white);
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-xl) var(--space-lg);
+  }
+
+  .no-results {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    padding-block: var(--space-lg);
+    font-style: italic;
+  }
+</style>

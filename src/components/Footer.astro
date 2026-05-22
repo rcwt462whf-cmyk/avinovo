@@ -1,0 +1,56 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Avinovo</span>
+    <p class="footer-copy">© {year} · Thoughtful writing on living well.</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="/blog">Writing</a>
+      <a href="/about">About</a>
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: var(--space-2xl);
+    border-top: 1px solid var(--color-border);
+    padding-block: var(--space-lg);
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-sm);
+    justify-content: space-between;
+  }
+
+  .footer-brand {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    color: var(--color-accent);
+  }
+
+  .footer-copy {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: var(--space-md);
+  }
+
+  .footer-nav a {
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    transition: color 0.15s;
+  }
+  .footer-nav a:hover { color: var(--color-accent); }
+</style>

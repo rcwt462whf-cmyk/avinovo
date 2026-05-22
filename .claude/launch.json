@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "avinovo-dev",
+      "runtimeExecutable": "/Users/szentirmaiverestamas/.nvm/versions/node/v22.22.3/bin/npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "/Users/szentirmaiverestamas/avinovo",
+      "port": 4321
+    }
+  ]
+}

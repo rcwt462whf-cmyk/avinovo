@@ -1,0 +1,79 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About"
+  description="About Avinovo — a slow writing project about living with intention, choosing well, and paying attention."
+>
+  <div class="about-page">
+    <div class="container">
+      <div class="about-inner">
+        <header class="about-header">
+          <h1>About</h1>
+        </header>
+
+        <div class="prose">
+          <p>
+            Avinovo is a small writing project about the quiet parts of a life — the morning rituals,
+            the tools that earn their keep, the books that change something, the choices that accumulate
+            into a way of living.
+          </p>
+
+          <p>
+            I write slowly and publish infrequently. These essays are meant to be read without hurrying.
+          </p>
+
+          <h2>What this is</h2>
+
+          <p>
+            Most of what I write falls somewhere in the territory of intentional living — not in the
+            aspirational influencer sense, but in the more ordinary sense of trying to choose things
+            that are worth choosing, and notice what's actually happening.
+          </p>
+
+          <p>
+            The categories are loose: lifestyle, home, books, and occasionally the objects that make
+            daily life better. When something is an affiliate link, it's clearly marked and only included
+            because I actually use it.
+          </p>
+
+          <h2>The name</h2>
+
+          <p>
+            Avinovo doesn't mean anything in particular. It felt like the right shape for this kind of project —
+            clean, a little European, unhurried.
+          </p>
+
+          <h2>Get in touch</h2>
+
+          <p>
+            If something resonated or you have a question, you're welcome to write.
+            The best essays here started as things someone said out loud and then wanted to think through more carefully.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-page { padding-block: var(--space-xl) var(--space-2xl); }
+
+  .about-inner {
+    max-width: var(--content-width);
+    margin-inline: auto;
+  }
+
+  .about-header {
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .about-header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-style: italic;
+    font-weight: 400;
+  }
+</style>

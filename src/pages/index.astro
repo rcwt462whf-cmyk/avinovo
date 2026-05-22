@@ -1,0 +1,212 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PostCard from '@/components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const featuredPosts = sortedPosts.filter(p => p.data.featured).slice(0, 3);
+const recentPosts = sortedPosts.slice(0, 4);
+---
+
+<BaseLayout
+  title="Avinovo"
+  description="Thoughtful writing on living well — slow mornings, considered objects, and the quiet art of paying attention."
+>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">A place to think slowly</p>
+      <h1 class="hero-headline">Writing about living<br />with intention.</h1>
+      <p class="hero-sub">
+        Essays on home, habit, and the objects we choose to keep around us.
+      </p>
+      <a href="/blog" class="hero-cta">Explore the writing →</a>
+    </div>
+  </section>
+
+  <!-- Featured posts -->
+  {featuredPosts.length > 0 && (
+    <section class="featured-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured</h2>
+          <a href="/blog" class="section-link">View all →</a>
+        </div>
+        <div class="posts-grid">
+          {featuredPosts.map((post, i) => (
+            <PostCard post={post} size={i === 0 ? 'large' : 'default'} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Recent posts -->
+  <section class="recent-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Recent</h2>
+        <a href="/blog" class="section-link">View all →</a>
+      </div>
+      <div class="recent-list">
+        {recentPosts.map(post => (
+          <article class="recent-item">
+            <div class="recent-meta">
+              <span class="recent-category">{post.data.category}</span>
+              <time datetime={post.data.pubDate.toISOString()} class="recent-date">
+                {post.data.pubDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+              </time>
+            </div>
+            <a href={`/blog/${post.slug}`} class="recent-title">{post.data.title}</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Hero */
+  .hero {
+    padding-block: var(--space-2xl);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .hero-eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-md);
+  }
+
+  .hero-headline {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--color-accent);
+    margin-bottom: var(--space-md);
+    font-style: italic;
+  }
+
+  .hero-sub {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    max-width: 480px;
+    margin-bottom: var(--space-lg);
+    line-height: 1.6;
+  }
+
+  .hero-cta {
+    display: inline-block;
+    font-size: 0.875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
+    padding-bottom: 2px;
+    transition: opacity 0.15s;
+  }
+  .hero-cta:hover { opacity: 0.7; }
+
+  /* Sections */
+  .featured-section,
+  .recent-section {
+    padding-block: var(--space-xl);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: var(--space-lg);
+  }
+
+  .section-title {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+
+  .section-link {
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+    transition: color 0.15s;
+  }
+  .section-link:hover { color: var(--color-accent); }
+
+  /* Featured grid */
+  .posts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  @media (min-width: 768px) {
+    .posts-grid {
+      grid-template-columns: 1.4fr 1fr;
+    }
+    .posts-grid > :first-child {
+      grid-row: span 2;
+    }
+  }
+
+  /* Recent list */
+  .recent-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .recent-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding-block: var(--space-md);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .recent-item:last-child { border-bottom: none; }
+
+  .recent-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-shrink: 0;
+  }
+
+  .recent-category {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .recent-date {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+
+  .recent-title {
+    font-family: var(--font-serif);
+    font-size: 1.0625rem;
+    color: var(--color-accent);
+    line-height: 1.3;
+    text-align: right;
+    flex: 1;
+  }
+  .recent-title:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .recent-item { flex-direction: column; gap: 0.25rem; }
+    .recent-title { text-align: left; }
+  }
+</style>
