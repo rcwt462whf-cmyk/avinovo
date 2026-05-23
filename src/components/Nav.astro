@@ -1,6 +1,6 @@
 ---
 const navLinks = [
-  { href: '/blog', label: 'Writing' },
+  { href: '/blog', label: 'Journal' },
   { href: '/about', label: 'About' },
 ];
 
@@ -9,10 +9,13 @@ const currentPath = Astro.url.pathname;
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="wordmark" aria-label="Avinovo home">Avinovo</a>
+    <a href="/" class="wordmark" aria-label="Avinovo home">
+      <img src="/logo-2x.png" alt="Avinovo" class="logo-img" width="300" height="72" />
+    </a>
 
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
-      <span></span><span></span>
+      <span class="bar bar-1"></span>
+      <span class="bar bar-2"></span>
     </button>
 
     <nav id="main-nav" class="main-nav" role="navigation" aria-label="Main navigation">
@@ -20,6 +23,7 @@ const currentPath = Astro.url.pathname;
         <a
           href={href}
           class:list={['nav-link', { active: currentPath.startsWith(href) }]}
+          aria-current={currentPath.startsWith(href) ? 'page' : undefined}
         >
           {label}
         </a>
@@ -32,10 +36,32 @@ const currentPath = Astro.url.pathname;
   const toggle = document.querySelector('.nav-toggle') as HTMLButtonElement;
   const nav = document.querySelector('.main-nav') as HTMLElement;
 
+  function openNav() {
+    toggle.setAttribute('aria-expanded', 'true');
+    nav.classList.add('open');
+    toggle.classList.add('is-open');
+  }
+
+  function closeNav() {
+    toggle.setAttribute('aria-expanded', 'false');
+    nav.classList.remove('open');
+    toggle.classList.remove('is-open');
+  }
+
   toggle?.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!expanded));
-    nav.classList.toggle('open');
+    toggle.getAttribute('aria-expanded') === 'true' ? closeNav() : openNav();
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (nav.classList.contains('open') && !nav.contains(e.target as Node) && !toggle.contains(e.target as Node)) {
+      closeNav();
+    }
+  });
+
+  // Close on nav link click (mobile)
+  nav.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', closeNav);
   });
 </script>
 
@@ -55,12 +81,12 @@ const currentPath = Astro.url.pathname;
     height: 64px;
   }
 
-  .wordmark {
-    font-family: var(--font-serif);
-    font-size: 1.35rem;
-    font-weight: 500;
-    color: var(--color-accent);
-    letter-spacing: -0.01em;
+  .wordmark { display: flex; align-items: center; }
+
+  .logo-img {
+    height: 26px;
+    width: auto;
+    display: block;
   }
 
   .main-nav {
@@ -70,32 +96,44 @@ const currentPath = Astro.url.pathname;
   }
 
   .nav-link {
-    font-size: 0.875rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
     color: var(--color-text-muted);
     transition: color 0.15s;
+    padding: 0.5rem 0;
   }
   .nav-link:hover,
   .nav-link.active {
     color: var(--color-accent);
   }
 
+  /* Hamburger */
   .nav-toggle {
     display: none;
     flex-direction: column;
+    justify-content: center;
     gap: 5px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 4px;
+    padding: 12px;
+    margin-right: -12px;
   }
-  .nav-toggle span {
+
+  .bar {
     display: block;
     width: 22px;
     height: 1.5px;
     background: var(--color-accent);
+    transform-origin: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
   }
+
+  /* X state */
+  .is-open .bar-1 { transform: translateY(3.5px) rotate(45deg); }
+  .is-open .bar-2 { transform: translateY(-3.5px) rotate(-45deg); }
 
   @media (max-width: 600px) {
     .nav-toggle { display: flex; }
@@ -110,13 +148,16 @@ const currentPath = Astro.url.pathname;
       gap: 0;
       background: var(--color-bg);
       border-bottom: 1px solid var(--color-border);
-      padding: var(--space-sm) 0;
+      padding: var(--space-xs) 0;
     }
     .main-nav.open { display: flex; }
 
     .nav-link {
       padding: var(--space-sm) var(--space-md);
       width: 100%;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
     }
   }
 </style>

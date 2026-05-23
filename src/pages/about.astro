@@ -4,76 +4,233 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 
 <BaseLayout
   title="About"
-  description="About Avinovo — a slow writing project about living with intention, choosing well, and paying attention."
+  description="Avinovo — interior design inspiration for the home you live in."
 >
   <div class="about-page">
+
     <div class="container">
-      <div class="about-inner">
-        <header class="about-header">
-          <h1>About</h1>
-        </header>
 
-        <div class="prose">
-          <p>
-            Avinovo is a small writing project about the quiet parts of a life — the morning rituals,
-            the tools that earn their keep, the books that change something, the choices that accumulate
-            into a way of living.
-          </p>
+      <!-- Hero -->
+      <section class="about-hero">
+        <p class="about-eyebrow">About</p>
+        <h1 class="about-title">Interior design ideas<br />in your inbox, once a month.</h1>
+      </section>
 
-          <p>
-            I write slowly and publish infrequently. These essays are meant to be read without hurrying.
-          </p>
+      <!-- Newsletter signup -->
+      <section class="signup-section">
+        <p class="signup-label">Newsletter — once a month</p>
+        <form class="signup-form" id="subscribe-form">
+          <div class="signup-row">
+            <label for="email-input" class="sr-only">Email address</label>
+            <input
+              id="email-input"
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+              class="signup-input"
+              autocomplete="email"
+              aria-required="true"
+            />
+            <button type="submit" class="signup-btn">Subscribe</button>
+          </div>
+          <p class="signup-note" id="signup-note" aria-live="polite">No spam. Unsubscribe anytime.</p>
+        </form>
+      </section>
 
-          <h2>What this is</h2>
-
-          <p>
-            Most of what I write falls somewhere in the territory of intentional living — not in the
-            aspirational influencer sense, but in the more ordinary sense of trying to choose things
-            that are worth choosing, and notice what's actually happening.
-          </p>
-
-          <p>
-            The categories are loose: lifestyle, home, books, and occasionally the objects that make
-            daily life better. When something is an affiliate link, it's clearly marked and only included
-            because I actually use it.
-          </p>
-
-          <h2>The name</h2>
-
-          <p>
-            Avinovo doesn't mean anything in particular. It felt like the right shape for this kind of project —
-            clean, a little European, unhurried.
-          </p>
-
-          <h2>Get in touch</h2>
-
-          <p>
-            If something resonated or you have a question, you're welcome to write.
-            The best essays here started as things someone said out loud and then wanted to think through more carefully.
-          </p>
+      <!-- Connect / socials -->
+      <section class="connect-section">
+        <p class="connect-label">Find us</p>
+        <div class="connect-cards">
+          <a
+            href="https://pinterest.com/avinovo_studio"
+            target="_blank"
+            rel="noopener"
+            class="social-card"
+          >
+            <div class="social-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+              </svg>
+            </div>
+            <div class="social-text">
+              <p class="social-label">Pinterest</p>
+              <p class="social-handle">@avinovo_studio</p>
+            </div>
+            <span class="social-arrow" aria-hidden="true">→</span>
+          </a>
         </div>
-      </div>
+      </section>
+
     </div>
   </div>
 </BaseLayout>
 
 <style>
-  .about-page { padding-block: var(--space-xl) var(--space-2xl); }
-
-  .about-inner {
-    max-width: var(--content-width);
-    margin-inline: auto;
+  .about-page {
+    padding-block: var(--space-xl) var(--space-2xl);
   }
 
-  .about-header {
+  /* Hero */
+  .about-hero {
     margin-bottom: var(--space-xl);
-    padding-bottom: var(--space-lg);
-    border-bottom: 1px solid var(--color-border);
   }
 
-  .about-header h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-style: italic;
-    font-weight: 400;
+  .about-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+  }
+
+  .about-title {
+    font-family: var(--font-sans);
+    font-size: clamp(2.25rem, 7vw, 4rem);
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--color-accent);
+    margin: 0;
+  }
+
+  /* Signup */
+  .signup-section {
+    margin-bottom: var(--space-xl);
+  }
+
+  .signup-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+  }
+
+  .signup-form {
+    max-width: 480px;
+  }
+
+  .signup-row {
+    display: flex;
+    border: 1px solid var(--color-accent);
+  }
+
+  .signup-input {
+    flex: 1;
+    padding: 0.9rem 1.1rem;
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    font-weight: 300;
+    color: var(--color-accent);
+    background: transparent;
+    border: none;
+    outline: none;
+    min-width: 0;
+  }
+
+  .signup-input::placeholder { color: var(--color-text-muted); }
+
+  .signup-btn {
+    padding: 0.9rem 1.25rem;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background: var(--color-accent);
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+  }
+  .signup-btn:hover { opacity: 0.85; }
+
+  .signup-note {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-top: 0.6rem;
+    letter-spacing: 0.01em;
+  }
+
+  /* Connect */
+  .connect-section { margin-bottom: 0; }
+
+  .connect-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-sm);
+  }
+
+  .connect-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .social-card {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--color-border);
+    transition: border-color 0.15s;
+    max-width: 280px;
+  }
+  .social-card:hover { border-color: var(--color-accent); }
+
+  .social-icon { color: var(--color-accent); flex-shrink: 0; }
+
+  .social-text { flex: 1; }
+
+  .social-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: 0.1rem;
+  }
+
+  .social-handle {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    margin: 0;
+  }
+
+  .social-arrow {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    flex-shrink: 0;
   }
 </style>
+
+<script>
+  const form = document.getElementById('subscribe-form') as HTMLFormElement;
+  const note = document.getElementById('signup-note') as HTMLParagraphElement;
+  const btn = form?.querySelector('button') as HTMLButtonElement;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    btn.textContent = '...';
+    btn.disabled = true;
+
+    const body = new FormData(form);
+    const res = await fetch('/api/subscribe', { method: 'POST', body });
+    const json = await res.json();
+
+    if (json.success) {
+      form.querySelector('.signup-row')!.remove();
+      note.textContent = 'You\'re in. See you next month.';
+      note.style.fontSize = '1rem';
+      note.style.color = 'var(--color-accent)';
+    } else {
+      note.textContent = json.error ?? 'Something went wrong.';
+      btn.textContent = 'Subscribe';
+      btn.disabled = false;
+    }
+  });
+</script>

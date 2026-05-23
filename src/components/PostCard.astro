@@ -4,9 +4,10 @@ import type { CollectionEntry } from 'astro:content';
 interface Props {
   post: CollectionEntry<'blog'>;
   size?: 'default' | 'large';
+  eager?: boolean;
 }
 
-const { post, size = 'default' } = Astro.props;
+const { post, size = 'default', eager = false } = Astro.props;
 const { slug, data } = post;
 const { title, description, pubDate, category, image, imageAlt } = data;
 
@@ -15,6 +16,14 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
   month: 'long',
   day: 'numeric',
 });
+
+// Unsplash srcset — strip existing params, apply our own
+function unsplashSrcset(url: string) {
+  const base = url.split('?')[0];
+  return `${base}?w=400&q=75&auto=format 400w, ${base}?w=800&q=75&auto=format 800w, ${base}?w=1200&q=75&auto=format 1200w`;
+}
+const srcset = image ? unsplashSrcset(image) : undefined;
+const sizes = '(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw';
 ---
 
 <article class:list={['post-card', { 'post-card--large': size === 'large' }]}>
@@ -22,12 +31,15 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
     <a href={`/blog/${slug}`} class="post-card__image-link" tabindex="-1" aria-hidden="true">
       <div class="post-card__image-wrap">
         <img
-          src={image}
+          src={`${image.split('?')[0]}?w=800&q=75&auto=format`}
+          srcset={srcset}
+          sizes={sizes}
           alt={imageAlt ?? title}
-          loading="lazy"
+          loading={eager ? 'eager' : 'lazy'}
+          fetchpriority={eager ? 'high' : undefined}
           decoding="async"
           width="800"
-          height="500"
+          height="1000"
         />
       </div>
     </a>
@@ -41,7 +53,9 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
       <a href={`/blog/${slug}`}>{title}</a>
     </h2>
     <p class="post-card__desc">{description}</p>
-    <a href={`/blog/${slug}`} class="post-card__read">Read →</a>
+    <a href={`/blog/${slug}`} class="post-card__read" aria-label={`Read: ${title}`}>
+      Keep reading →
+    </a>
   </div>
 </article>
 
@@ -54,7 +68,7 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 
   .post-card__image-wrap {
     overflow: hidden;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 4 / 5;
     background: var(--color-bg-alt);
   }
   .post-card__image-wrap img {
@@ -108,15 +122,19 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
   }
 
   .post-card__read {
+    display: inline-block;
     font-size: 0.8125rem;
     letter-spacing: 0.04em;
     color: var(--color-accent);
     font-weight: 500;
     margin-top: 0.25rem;
+    padding: 0.25rem 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
   .post-card__read:hover { text-decoration: underline; }
 
-  /* Large variant used in hero grid */
   .post-card--large .post-card__title {
     font-size: clamp(1.35rem, 3vw, 1.75rem);
   }

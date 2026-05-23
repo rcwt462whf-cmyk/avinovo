@@ -1,37 +1,31 @@
 ---
-title: "Building a Reading Habit That Actually Sticks"
-description: "Forget the 52-books-a-year challenge. Here's how to read in a way that genuinely changes you."
+title: "How to Layer a Living Room Without It Looking Busy"
+description: "The difference between a collected room and a cluttered one comes down to three decisions."
 pubDate: "2026-05-03"
 author: "Avinovo"
-category: "Books"
-tags: ["reading", "habits", "personal growth"]
-image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&q=80"
-imageAlt: "Stack of books on a light wooden surface"
+category: "Living Room"
+tags: ["living room", "layering", "styling", "furniture"]
+image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80"
+imageAlt: "A beautifully layered living room with warm tones, soft textiles, and considered furniture"
 featured: true
 ---
 
-There's a version of reading that's about accumulation — books finished, pages logged, yearly totals posted in January. It looks like reading. It feels productive. And it leaves almost nothing behind.
+The rooms that look rich without looking busy all share a quality that's hard to name but easy to feel: restraint applied unevenly. Some areas are very deliberate; others are deliberately left alone.
 
-The kind of reading that changes you looks different. It's slower. It wanders. It stops mid-chapter to stare at the ceiling.
+This is not how most people approach decorating. Most people fill rooms symmetrically, matching sets, equal weight on every surface. The result is a room that looks like a furniture showroom — complete, coordinated, and somehow lifeless.
 
-## The problem with reading goals
+## The three-layer approach
 
-When the goal is quantity, every page becomes something to get through. You read to finish rather than to understand. The book becomes a checkbox.
+Think of a living room as three separate layers that need to work together without competing.
 
-This is why most reading-habit advice fails. It optimizes for the wrong thing.
+**Layer one: the anchor.** A sofa, a rug, a coffee table. These set the scale of the room and should share a visual language — not necessarily the same style, but the same weight. A very low sofa and a very high-legged coffee table will always feel slightly unresolved.
 
-## What to optimize for instead
+**Layer two: the warmth.** Cushions, throws, the texture of the rug. This is where you introduce variation in material. A linen sofa gains enormously from a bouclé cushion. A jute rug looks better when paired with something softer elsewhere. The rule here is contrast in texture, not in colour.
 
-Read one book at a time. Read it slowly enough that you can actually think about it. Stop when you find something worth sitting with.
+**Layer three: the specific.** One or two objects that have personal weight — a piece of ceramics from a specific trip, a lamp you saved up for, a plant that's been with you for years. These are what make the room feel inhabited rather than styled.
 
-The aim isn't to read more books. The aim is to be genuinely affected by the ones you do read.
+## Where people go wrong
 
-## Making space for it
+The most common error is treating all three layers with the same level of attention. The specific layer — objects and accessories — should be the most curated and the sparsest. Three things done well on a shelf outperforms twelve things arranged carefully every time.
 
-The habit doesn't fail because people don't have time. It fails because reading competes with things that are more immediately stimulating — phones, shows, feeds.
-
-The solution is environmental. Put a book where your phone usually sits. Read before anything with a screen. Make it the path of least resistance.
-
----
-
-*The reading chair I use is from [a brand I've recommended before](#) — good lumbar support matters more than you'd think for long sessions.*
+The second most common error is buying furniture all at once. A room assembled in a single Saturday at a furniture store will always look assembled on a single Saturday. Add pieces over time and the room develops its own logic.
