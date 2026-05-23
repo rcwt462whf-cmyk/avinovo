@@ -19,6 +19,8 @@ const formattedPub = pubDate.toLocaleDateString('en-US', {
 const formattedUpd = updatedDate?.toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric',
 });
+const wordCount = post.body.split(/\s+/).length;
+const readingTime = Math.ceil(wordCount / 250);
 ---
 
 <BaseLayout
@@ -64,6 +66,8 @@ const formattedUpd = updatedDate?.toLocaleDateString('en-US', {
             <a href={`/blog?category=${encodeURIComponent(category)}`} class="post-category">{category}</a>
             <span class="post-dot" aria-hidden="true">·</span>
             <time datetime={pubDate.toISOString()}>{formattedPub}</time>
+            <span class="post-dot" aria-hidden="true">·</span>
+            <span class="post-reading-time">{readingTime} min read</span>
             {updatedDate && (
               <span class="post-updated"> · Updated {formattedUpd}</span>
             )}
