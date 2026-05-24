@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { post } = Astro.props;
-const { title, description, pubDate, updatedDate, author, category, image, imageAlt, affiliate } = post.data;
+const { title, description, pubDate, updatedDate, author, category, tags, image, imageAlt, affiliate } = post.data;
 const canonicalURL = Astro.url.href;
 const pinURL = image
   ? `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(canonicalURL)}&media=${encodeURIComponent(image)}&description=${encodeURIComponent(description)}`
@@ -32,6 +32,32 @@ const readingTime = Math.ceil(wordCount / 250);
   pubDate={pubDate}
   author={author}
 >
+  <Fragment slot="head">
+    <!-- Article-specific Open Graph -->
+    <meta property="article:section" content={category} />
+    {tags.map(tag => <meta property="article:tag" content={tag} />)}
+    {updatedDate && <meta property="article:modified_time" content={updatedDate.toISOString()} />}
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description,
+      "image": image ? (image.startsWith('http') ? image : `https://avinovo.com${image}`) : undefined,
+      "datePublished": pubDate.toISOString(),
+      "dateModified": (updatedDate ?? pubDate).toISOString(),
+      "author": { "@type": "Person", "name": author },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Avinovo",
+        "logo": { "@type": "ImageObject", "url": "https://avinovo.com/logo-2x.png" }
+      },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalURL },
+      "articleSection": category,
+      "keywords": tags.join(", ")
+    })} />
+  </Fragment>
   <article class="post-article">
     <!-- Hero image -->
     {image && (

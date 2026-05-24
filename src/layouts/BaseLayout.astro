@@ -32,6 +32,7 @@ const { title, description, image, imageAlt, type, pubDate, author } = Astro.pro
       pubDate={pubDate}
       author={author}
     />
+    <slot name="head" />
   </head>
   <body>
     <Nav />
