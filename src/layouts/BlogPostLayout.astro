@@ -7,7 +7,8 @@ interface Props {
 }
 
 const { post } = Astro.props;
-const { title, description, pubDate, updatedDate, author, category, tags, image, imageAlt, affiliate } = post.data;
+const { title, description, pubDate, updatedDate, author, category, tags, image, heroImage, imageAlt, affiliate } = post.data;
+const displayHero = heroImage ?? image;
 const canonicalURL = Astro.url.href;
 const pinURL = image
   ? `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(canonicalURL)}&media=${encodeURIComponent(image)}&description=${encodeURIComponent(description)}`
@@ -60,13 +61,13 @@ const readingTime = Math.ceil(wordCount / 250);
   </Fragment>
   <article class="post-article">
     <!-- Hero image -->
-    {image && (
+    {displayHero && (
       <div class="post-hero-image">
         <img
-          src={image}
+          src={displayHero}
           alt={imageAlt ?? title}
-          width="1200"
-          height="630"
+          width="1920"
+          height="1080"
           loading="eager"
           fetchpriority="high"
           decoding="async"
@@ -140,8 +141,7 @@ const readingTime = Math.ceil(wordCount / 250);
 <style>
   .post-hero-image {
     width: 100%;
-    aspect-ratio: 3 / 2;
-    max-height: 600px;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
     background: var(--color-bg-alt);
     position: relative;
@@ -150,13 +150,7 @@ const readingTime = Math.ceil(wordCount / 250);
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 60%;
-  }
-
-  @media (max-width: 600px) {
-    .post-hero-image {
-      aspect-ratio: 4 / 3;
-    }
+    object-position: center 50%;
   }
 
   .pin-save-btn {

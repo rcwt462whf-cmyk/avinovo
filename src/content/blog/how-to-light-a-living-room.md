@@ -6,6 +6,7 @@ author: "Avinovo"
 category: "Living Room"
 tags: ["lighting", "living room", "interior design", "home decor", "floor lamp"]
 image: "/images/lighting/cover.png"
+heroImage: "/images/lighting/cover-hero.jpg"
 imageAlt: "Your moody, warm living room at night with layered lighting, a green bouclé chair, vinyl record wall and city view"
 featured: true
 affiliate: false
