@@ -5,7 +5,7 @@ pubDate: "2026-05-23"
 author: "Avinovo"
 category: "Living Room"
 tags: ["lighting", "living room", "interior design", "home decor", "floor lamp"]
-image: "/images/lighting/cover.jpg"
+image: "/images/lighting/cover.png"
 imageAlt: "Your moody, warm living room at night with layered lighting, a green bouclé chair, vinyl record wall and city view"
 featured: true
 affiliate: false
@@ -52,7 +52,7 @@ The other issue is color temperature. Most ceiling fixtures use bulbs in the 400
 
 ## 01 — Ambient light
 
-![Your bright living room with an orange arc lamp, rattan chair and monstera plant in warm afternoon light](/images/lighting/ambient.jpg)
+![Your bright living room with an orange arc lamp, rattan chair and monstera plant in warm afternoon light](/images/lighting/ambient.jpeg)
 
 Ambient light is the base layer — general, diffused illumination that fills the room without creating strong shadows or focal points. It should be warm (2700–3000 K maximum), low in intensity in the evening, and ideally dimmable.
 
@@ -116,7 +116,7 @@ A painting lit from above, a plant with an uplighter beneath it casting a shadow
 
 ## The one number that matters most: Kelvin
 
-![Your living room at night — two sofas, a single glowing floor lamp and a candle on the coffee table creating pools of warm amber light](/images/lighting/mood.jpg)
+![Your living room at night — two sofas, a single glowing floor lamp and a candle on the coffee table creating pools of warm amber light](/images/lighting/mood.jpeg)
 
 Every bulb has a color temperature measured in Kelvin. This single number determines whether your room feels warm or cold — and it is the most important specification when buying any light source for a living room.
 
