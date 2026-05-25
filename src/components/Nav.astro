@@ -79,6 +79,13 @@ const currentPath = Astro.url.pathname;
     align-items: center;
     justify-content: space-between;
     height: 64px;
+    padding-inline: var(--space-sm) var(--space-md);
+  }
+
+  @media (min-width: 768px) {
+    .header-inner {
+      padding-inline: var(--space-md) var(--space-lg);
+    }
   }
 
   .wordmark { display: flex; align-items: center; }
