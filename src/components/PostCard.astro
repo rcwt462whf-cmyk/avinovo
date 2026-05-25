@@ -17,12 +17,13 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
   day: 'numeric',
 });
 
-// Unsplash srcset — strip existing params, apply our own
+// Unsplash srcset — only applies to Unsplash CDN images
 function unsplashSrcset(url: string) {
   const base = url.split('?')[0];
   return `${base}?w=400&q=75&auto=format 400w, ${base}?w=800&q=75&auto=format 800w, ${base}?w=1200&q=75&auto=format 1200w`;
 }
-const srcset = image ? unsplashSrcset(image) : undefined;
+const isUnsplash = image?.includes('unsplash.com');
+const srcset = isUnsplash ? unsplashSrcset(image!) : undefined;
 const sizes = '(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw';
 ---
 
@@ -31,7 +32,7 @@ const sizes = '(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw';
     <a href={`/blog/${slug}`} class="post-card__image-link" tabindex="-1" aria-hidden="true">
       <div class="post-card__image-wrap">
         <img
-          src={`${image.split('?')[0]}?w=800&q=75&auto=format`}
+          src={isUnsplash ? `${image!.split('?')[0]}?w=800&q=75&auto=format` : image}
           srcset={srcset}
           sizes={sizes}
           alt={imageAlt ?? title}
