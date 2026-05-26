@@ -5,7 +5,7 @@ pubDate: "2026-05-26"
 author: "Avinovo"
 category: "Bathroom"
 tags: ["zellige tiles", "bathroom design", "shower tiles", "tile trends", "Moroccan tiles", "bathroom renovation"]
-image: "/images/zellige/cover.png"
+image: "/images/zellige/cover.jpg"
 heroImage: "/images/zellige/cover-hero.jpg"
 imageAlt: "Your bathroom with zellige tiles catching light on an uneven hand-glazed surface"
 featured: false
@@ -39,7 +39,7 @@ Done correctly, zellige performs perfectly in wet areas. The failure cases you s
 
 The colour range for zellige is wide, but four have become the standard references for bathroom design. Each has a different character in a wet space.
 
-<div style="margin: 2rem 0; border: 1px solid #B8CCBE; background: #B8CCBE; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1px;">
+<div style="margin: 2rem 0; border: 1px solid #B8CCBE; background: #B8CCBE; display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 1px;">
   <div style="background: #fff;">
     <div style="background: #2E5B40; height: 10px;"></div>
     <div style="padding: 1.25rem 1.25rem 1rem;">
@@ -160,6 +160,8 @@ Zellige pricing varies considerably depending on origin, finish quality and wher
 Add 10–15% to your tile quantity for cuts and waste. A standard shower enclosure of 3–4m² will need 3.5–4.5m² of tile ordered. Installation costs for zellige run 20–30% higher than standard ceramic work, owing to the additional setting out, levelling and sealing stages involved.
 
 ---
+
+![Your terracotta zellige shower — warm earthy glaze with sand-toned grout and bronze fixtures](/images/zellige/terracotta.jpg)
 
 ## Maintenance: the honest version
 
