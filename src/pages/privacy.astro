@@ -1,0 +1,134 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+const updated = 'May 26, 2026';
+---
+
+<BaseLayout
+  title="Privacy Policy"
+  description="How Avinovo collects, uses and protects your personal data."
+>
+  <div class="privacy-page">
+    <div class="container">
+
+      <header class="privacy-header">
+        <p class="privacy-eyebrow">Legal</p>
+        <h1 class="privacy-title">Privacy Policy</h1>
+        <p class="privacy-meta">Last updated: {updated}</p>
+      </header>
+
+      <div class="privacy-body">
+
+        <section>
+          <h2>Who we are</h2>
+          <p>Avinovo is an interior design journal at <strong>avinovo.com</strong>. If you have any questions about this policy, contact us at <a href="mailto:hello@avinovo.com">hello@avinovo.com</a>.</p>
+        </section>
+
+        <section>
+          <h2>What data we collect</h2>
+          <p>The only personal data we collect is your <strong>email address</strong>, and only when you voluntarily subscribe to the Avinovo newsletter through the form on the About page.</p>
+          <p>We do not collect names, addresses, payment information, or any other personal data. We do not use cookies for tracking or advertising.</p>
+        </section>
+
+        <section>
+          <h2>How we use your email</h2>
+          <p>Your email address is used solely to send you the Avinovo newsletter — a monthly interior design digest. We will never use it for anything else.</p>
+        </section>
+
+        <section>
+          <h2>Who we share it with</h2>
+          <p>Your email address is stored with <strong>Resend</strong> (resend.com), our email delivery provider. It is not shared with, sold to, or accessible by any other third party.</p>
+          <p>Resend's privacy policy is available at <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">resend.com/legal/privacy-policy</a>.</p>
+        </section>
+
+        <section>
+          <h2>Your rights</h2>
+          <p>You can unsubscribe at any time using the link at the bottom of any newsletter email. You can also request deletion of your data by emailing <a href="mailto:hello@avinovo.com">hello@avinovo.com</a> — we will remove your address within 7 days.</p>
+          <p>If you are in the EU or UK, you have additional rights under GDPR including the right to access, correct, or port your data. Contact us to exercise any of these rights.</p>
+        </section>
+
+        <section>
+          <h2>Legal basis for processing (EU/GDPR)</h2>
+          <p>We process your email address on the basis of <strong>consent</strong> — you provided it voluntarily by submitting the subscription form. You may withdraw consent at any time by unsubscribing.</p>
+        </section>
+
+        <section>
+          <h2>Data retention</h2>
+          <p>We retain your email address for as long as you remain subscribed. When you unsubscribe, your address is removed from our active list. You may request full deletion at any time.</p>
+        </section>
+
+        <section>
+          <h2>Changes to this policy</h2>
+          <p>If we make material changes to how we handle your data, we will update this page and note the new date above. We will not retroactively change how we handle data already collected without notifying you.</p>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .privacy-page {
+    padding-block: var(--space-xl) var(--space-2xl);
+  }
+
+  .privacy-header {
+    margin-bottom: var(--space-xl);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--space-lg);
+  }
+
+  .privacy-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-xs);
+  }
+
+  .privacy-title {
+    font-family: var(--font-sans);
+    font-size: clamp(1.75rem, 5vw, 3rem);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: var(--color-accent);
+    margin: 0 0 var(--space-xs);
+  }
+
+  .privacy-meta {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .privacy-body {
+    max-width: var(--content-width);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .privacy-body section h2 {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-xs);
+  }
+
+  .privacy-body p {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: 0.75em;
+  }
+  .privacy-body p:last-child { margin-bottom: 0; }
+
+  .privacy-body a {
+    color: var(--color-accent);
+    border-bottom: 1px solid var(--color-border);
+    transition: border-color 0.15s;
+  }
+  .privacy-body a:hover { border-color: var(--color-accent); }
+</style>

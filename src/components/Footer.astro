@@ -13,7 +13,7 @@ const year = new Date().getFullYear();
         <a href="/blog">Journal</a>
         <a href="/about">About</a>
       </nav>
-      <p class="footer-copy">© {year} Avinovo · All rights reserved.</p>
+      <p class="footer-copy">© {year} Avinovo · All rights reserved. · <a href="/privacy">Privacy</a></p>
     </div>
   </div>
 </footer>
@@ -47,6 +47,11 @@ const year = new Date().getFullYear();
     color: var(--color-text-muted);
     margin: 0;
   }
+  .footer-copy a {
+    color: var(--color-text-muted);
+    transition: color 0.15s;
+  }
+  .footer-copy a:hover { color: var(--color-accent); }
 
   .footer-nav {
     display: flex;
