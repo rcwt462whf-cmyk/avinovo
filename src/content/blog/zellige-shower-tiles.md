@@ -39,7 +39,7 @@ Done correctly, zellige performs perfectly in wet areas. The failure cases you s
 
 The colour range for zellige is wide, but four have become the standard references for bathroom design. Each has a different character in a wet space.
 
-<div style="margin: 2rem 0; border: 1px solid #B8CCBE; background: #B8CCBE; display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 1px;">
+<div style="margin: 2rem 0; border: 1px solid #B8CCBE; background: #B8CCBE; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 1px;">
   <div style="background: #fff;">
     <div style="background: #2E5B40; height: 10px;"></div>
     <div style="padding: 1.25rem 1.25rem 1rem;">
@@ -73,6 +73,40 @@ The colour range for zellige is wide, but four have become the standard referenc
     </div>
   </div>
 </div>
+
+---
+
+## What it costs
+
+![Your shower alcove with zellige tiles installed floor to ceiling — brass rainfall head, stone soap dish](/images/zellige/bathroom.jpg)
+
+Zellige pricing varies considerably depending on origin, finish quality and where you source. Prices below are per square metre, supply only.
+
+<div style="margin: 2rem 0; border: 1px solid #B8CCBE; overflow: hidden;">
+  <div style="display: flex; align-items: stretch; border-bottom: 1px solid #B8CCBE;">
+    <div style="background: #1E3D35; padding: 1rem 1.25rem; width: 100px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center;">
+      <div style="font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: #6B8F7E; margin-bottom: 0.3rem;">Entry</div>
+      <div style="font-size: 0.85rem; font-weight: 700; color: #A8CCB8; line-height: 1.2;">£30–55<span style="font-size: 0.7rem; font-weight: 400;">/m²</span></div>
+    </div>
+    <div style="padding: 1rem 1.25rem; font-size: 0.875rem; color: #1A2E28; line-height: 1.65;">Machine-assisted zellige from Spain or Portugal. Consistent sizing makes installation easier. Glaze variation is present but less pronounced — readable as zellige, but not the full irregularity of the real thing.</div>
+  </div>
+  <div style="display: flex; align-items: stretch; border-bottom: 1px solid #B8CCBE;">
+    <div style="background: #2C4A3E; padding: 1rem 1.25rem; width: 100px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center;">
+      <div style="font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: #7BAF90; margin-bottom: 0.3rem;">Mid</div>
+      <div style="font-size: 0.85rem; font-weight: 700; color: #C8E8D0; line-height: 1.2;">£55–95<span style="font-size: 0.7rem; font-weight: 400;">/m²</span></div>
+    </div>
+    <div style="padding: 1rem 1.25rem; font-size: 0.875rem; color: #1A2E28; line-height: 1.65; background: #F8FAF8;">Genuine handmade Moroccan zellige from established UK importers. Full glaze variation, authentic sizing irregularity, the actual material. This is where most renovations land.</div>
+  </div>
+  <div style="display: flex; align-items: stretch;">
+    <div style="background: #3A5E50; padding: 1rem 1.25rem; width: 100px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center;">
+      <div style="font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: #90C8A8; margin-bottom: 0.3rem;">Premium</div>
+      <div style="font-size: 0.85rem; font-weight: 700; color: #D8F0E0; line-height: 1.2;">£95–150+<span style="font-size: 0.7rem; font-weight: 400;">/m²</span></div>
+    </div>
+    <div style="padding: 1rem 1.25rem; font-size: 0.875rem; color: #1A2E28; line-height: 1.65;">Curated imports with colour-graded batches, or bespoke colourways. For projects where tile-to-tile colour consistency matters or a specific shade falls outside the standard range.</div>
+  </div>
+</div>
+
+Add 10–15% to your tile quantity for cuts and waste. A standard shower enclosure of 3–4m² will need 3.5–4.5m² of tile ordered. Installation costs for zellige run 20–30% higher than standard ceramic work, owing to the additional setting out, levelling and sealing stages involved.
 
 ---
 
@@ -124,40 +158,6 @@ The grout colour determines the final reading of the wall as much as the tile co
 </div>
 
 The general rule: if you want tile variation and pattern to read clearly, choose a contrasting grout. If you want the wall to feel like a single monolithic surface, choose a tonal grout in the same colour family as the tile.
-
----
-
-## What it costs
-
-![Your shower alcove with zellige tiles installed floor to ceiling — brass rainfall head, stone soap dish](/images/zellige/bathroom.jpg)
-
-Zellige pricing varies considerably depending on origin, finish quality and where you source. Prices below are per square metre, supply only.
-
-<div style="margin: 2rem 0; border: 1px solid #B8CCBE; overflow: hidden;">
-  <div style="display: flex; align-items: stretch; border-bottom: 1px solid #B8CCBE;">
-    <div style="background: #1E3D35; padding: 1rem 1.25rem; width: 100px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center;">
-      <div style="font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: #6B8F7E; margin-bottom: 0.3rem;">Entry</div>
-      <div style="font-size: 0.85rem; font-weight: 700; color: #A8CCB8; line-height: 1.2;">£30–55<span style="font-size: 0.7rem; font-weight: 400;">/m²</span></div>
-    </div>
-    <div style="padding: 1rem 1.25rem; font-size: 0.875rem; color: #1A2E28; line-height: 1.65;">Machine-assisted zellige from Spain or Portugal. Consistent sizing makes installation easier. Glaze variation is present but less pronounced — readable as zellige, but not the full irregularity of the real thing.</div>
-  </div>
-  <div style="display: flex; align-items: stretch; border-bottom: 1px solid #B8CCBE;">
-    <div style="background: #2C4A3E; padding: 1rem 1.25rem; width: 100px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center;">
-      <div style="font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: #7BAF90; margin-bottom: 0.3rem;">Mid</div>
-      <div style="font-size: 0.85rem; font-weight: 700; color: #C8E8D0; line-height: 1.2;">£55–95<span style="font-size: 0.7rem; font-weight: 400;">/m²</span></div>
-    </div>
-    <div style="padding: 1rem 1.25rem; font-size: 0.875rem; color: #1A2E28; line-height: 1.65; background: #F8FAF8;">Genuine handmade Moroccan zellige from established UK importers. Full glaze variation, authentic sizing irregularity, the actual material. This is where most renovations land.</div>
-  </div>
-  <div style="display: flex; align-items: stretch;">
-    <div style="background: #3A5E50; padding: 1rem 1.25rem; width: 100px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center;">
-      <div style="font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: #90C8A8; margin-bottom: 0.3rem;">Premium</div>
-      <div style="font-size: 0.85rem; font-weight: 700; color: #D8F0E0; line-height: 1.2;">£95–150+<span style="font-size: 0.7rem; font-weight: 400;">/m²</span></div>
-    </div>
-    <div style="padding: 1rem 1.25rem; font-size: 0.875rem; color: #1A2E28; line-height: 1.65;">Curated imports with colour-graded batches, or bespoke colourways. For projects where tile-to-tile colour consistency matters or a specific shade falls outside the standard range.</div>
-  </div>
-</div>
-
-Add 10–15% to your tile quantity for cuts and waste. A standard shower enclosure of 3–4m² will need 3.5–4.5m² of tile ordered. Installation costs for zellige run 20–30% higher than standard ceramic work, owing to the additional setting out, levelling and sealing stages involved.
 
 ---
 
