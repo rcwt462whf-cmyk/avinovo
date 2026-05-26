@@ -39,6 +39,9 @@ const readingTime = Math.ceil(wordCount / 250);
     {tags.map(tag => <meta property="article:tag" content={tag} />)}
     {updatedDate && <meta property="article:modified_time" content={updatedDate.toISOString()} />}
 
+    <!-- Keywords for scrapers -->
+    {tags.length > 0 && <meta name="keywords" content={[category, ...tags].join(', ')} />}
+
     <!-- JSON-LD structured data -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
@@ -56,7 +59,10 @@ const readingTime = Math.ceil(wordCount / 250);
       },
       "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalURL },
       "articleSection": category,
-      "keywords": tags.join(", ")
+      "keywords": [category, ...tags].join(", "),
+      "wordCount": wordCount,
+      "timeRequired": `PT${readingTime}M`,
+      "inLanguage": "en-US"
     })} />
   </Fragment>
   <article class="post-article">
