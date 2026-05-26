@@ -80,7 +80,7 @@ The ceiling fixture typically provides this layer, but should never be the only 
 
 Task light is the functional layer — direct, focused illumination placed specifically where you need to see clearly. In a living room, this primarily means the reading area.
 
-The positioning matters more than the product. A floor lamp placed beside and slightly **behind** the shoulder of the person reading is significantly more effective than one placed directly in front, which creates glare. The light source should be at approximately seated shoulder height, directed at the surface being used, with the shade preventing direct visibility of the bulb from seated eye level.
+The positioning matters more than the product. A floor lamp placed beside and slightly behind the shoulder of the person reading is significantly more effective than one placed directly in front, which creates glare. The light source should be at approximately seated shoulder height, directed at the surface being used, with the shade preventing direct visibility of the bulb from seated eye level.
 
 For a living room reading setup, an arc floor lamp with a downward-facing shade is the most versatile option — it can reach over the back of a sofa or armchair without the lamp base needing to be placed directly beside the seat.
 
@@ -99,7 +99,7 @@ For a living room reading setup, an arc floor lamp with a downward-facing shade 
 
 Accent light is purely aesthetic — the layer most people omit entirely. Its purpose is to create pools of light and shadow on walls, surfaces and objects, giving the room visual depth and warmth that neither ambient nor task light can provide alone.
 
-A painting lit from above, a plant with an uplighter beneath it casting a shadow on the wall, a small table lamp on a bookshelf between books — these are all accent light. The key principle is **contrast**: accent light works because it is brighter than the ambient level in its immediate area. If the ambient light is too bright, accent light loses its effect.
+A painting lit from above, a plant with an uplighter beneath it casting a shadow on the wall, a small table lamp on a bookshelf between books — these are all accent light. The key principle is contrast: accent light works because it is brighter than the ambient level in its immediate area. If the ambient light is too bright, accent light loses its effect.
 
 **Specific options that work without spending much:**
 
