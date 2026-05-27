@@ -38,7 +38,7 @@ The kitchen worktop is the most used horizontal surface in your home. It gets ho
     <div style="font-size: 0.6rem; letter-spacing: 2px; color: #9B3A2A;">●○○○○</div>
   </div>
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
-    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Value</div>
+    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Cost</div>
     <div style="font-size: 0.6rem; letter-spacing: 2px; color: #C8952A;">●●●○○</div>
   </div>
 </div>
@@ -82,8 +82,8 @@ The people who love marble worktops and never regret them are those who understa
     <div style="font-size: 0.6rem; letter-spacing: 2px; color: #2C4A3E;">●●●●●</div>
   </div>
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
-    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Value</div>
-    <div style="font-size: 0.6rem; letter-spacing: 2px; color: #C8952A;">●●●○○</div>
+    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Cost</div>
+    <div style="font-size: 0.6rem; letter-spacing: 2px; color: #B85C38;">●●●●○</div>
   </div>
 </div>
 
@@ -93,7 +93,7 @@ The practical advantages of quartz are significant. It does not need sealing. It
 
 The aesthetic trade-off is that quartz lacks the depth and natural variation of genuine stone. The pattern is consistent across the slab — which reads as slightly artificial to a trained eye. High-end quartz has improved significantly in the last five years and the better versions are genuinely difficult to distinguish from natural stone at normal viewing distance. Budget quartz products are immediately identifiable.
 
-Cost: mid-range quartz worktops run between 80 000 and 180 000 Ft per linear metre installed, depending on thickness, edge profile, and supplier.
+Cost: mid-range quartz worktops run between €200 and €450 per linear metre installed, depending on thickness, edge profile, and supplier.
 
 <div style="margin: 1.75rem 0; border: 1px solid #E8D8A0; overflow: hidden;">
   <div style="background: #C8952A; padding: 0.4rem 1.25rem;">
@@ -126,8 +126,8 @@ Cost: mid-range quartz worktops run between 80 000 and 180 000 Ft per linear met
     <div style="font-size: 0.6rem; letter-spacing: 2px; color: #C8952A;">●●●○○</div>
   </div>
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
-    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Value</div>
-    <div style="font-size: 0.6rem; letter-spacing: 2px; color: #C8952A;">●●●○○</div>
+    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Cost</div>
+    <div style="font-size: 0.6rem; letter-spacing: 2px; color: #B85C38;">●●●●○</div>
   </div>
 </div>
 
@@ -135,7 +135,7 @@ Granite is an igneous rock — formed under extreme heat and pressure — which 
 
 A granite worktop placed in a kitchen will outlast the kitchen itself. It does not etch from acids in the way marble does. It can tolerate hot pans placed directly on the surface without damage. It scratches with extreme difficulty — you would need a material harder than granite, which in a domestic kitchen you are unlikely to encounter.
 
-The aesthetic of granite is distinctive and not to everyone's taste. The speckled, crystalline appearance of most granite reads as slightly dated in very contemporary kitchen designs. For classic, farmhouse, Mediterranean, or traditional kitchens it works exceptionally well. Cost is typically between 75 000 and 160 000 Ft per linear metre installed.
+The aesthetic of granite is distinctive and not to everyone's taste. The speckled, crystalline appearance of most granite reads as slightly dated in very contemporary kitchen designs. For classic, farmhouse, Mediterranean, or traditional kitchens it works exceptionally well. Cost is typically between €190 and €400 per linear metre installed.
 
 <div style="margin: 1.75rem 0; border: 1px solid #E8D8A0; overflow: hidden;">
   <div style="background: #C8952A; padding: 0.4rem 1.25rem;">
@@ -168,8 +168,8 @@ The aesthetic of granite is distinctive and not to everyone's taste. The speckle
     <div style="font-size: 0.6rem; letter-spacing: 2px; color: #9B3A2A;">●○○○○</div>
   </div>
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
-    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Value</div>
-    <div style="font-size: 0.6rem; letter-spacing: 2px; color: #4A7A6A;">●●●●○</div>
+    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Cost</div>
+    <div style="font-size: 0.6rem; letter-spacing: 2px; color: #C8952A;">●●○○○</div>
   </div>
 </div>
 
@@ -179,7 +179,7 @@ The warmth and visual weight of a solid timber worktop — oak, walnut, or beech
 
 The demands of wood are also real. A solid wood worktop must be oiled every three to six months minimum to prevent the surface drying, cracking along the grain, and becoming susceptible to water damage. Standing water on an untreated surface will cause swelling, warping, and blackening that cannot be sanded out if left long enough. The area around the sink is particularly vulnerable.
 
-Cost: solid oak worktop in 40mm thickness runs between 25 000 and 55 000 Ft per linear metre for materials — making wood the most accessible premium worktop material from a budget perspective.
+Cost: solid oak worktop in 40mm thickness runs between €60 and €140 per linear metre for materials — making wood the most accessible premium worktop material from a budget perspective.
 
 <div style="margin: 1.75rem 0; border: 1px solid #E8D8A0; overflow: hidden;">
   <div style="background: #C8952A; padding: 0.4rem 1.25rem;">
@@ -212,8 +212,8 @@ Cost: solid oak worktop in 40mm thickness runs between 25 000 and 55 000 Ft per 
     <div style="font-size: 0.6rem; letter-spacing: 2px; color: #9B3A2A;">●○○○○</div>
   </div>
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
-    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Value</div>
-    <div style="font-size: 0.6rem; letter-spacing: 2px; color: #B85C38;">●●○○○</div>
+    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Cost</div>
+    <div style="font-size: 0.6rem; letter-spacing: 2px; color: #9B3A2A;">●●●●●</div>
   </div>
 </div>
 
@@ -223,7 +223,7 @@ The reality of living with concrete is more demanding than most design publicati
 
 The aesthetic reward, for the right person in the right kitchen, makes all of this worthwhile. No other material ages in quite the same way — a used concrete worktop develops a patina of slight variations in tone and texture that makes it look more considered, not less.
 
-Cost: poured-in-place concrete is among the most expensive options — between 150 000 and 350 000 Ft per linear metre depending on fabricator and complexity.
+Cost: poured-in-place concrete is among the most expensive options — between €380 and €880 per linear metre depending on fabricator and complexity.
 
 <div style="margin: 1.75rem 0; border: 1px solid #E8D8A0; overflow: hidden;">
   <div style="background: #C8952A; padding: 0.4rem 1.25rem;">
@@ -256,8 +256,8 @@ Cost: poured-in-place concrete is among the most expensive options — between 1
     <div style="font-size: 0.6rem; letter-spacing: 2px; color: #2C4A3E;">●●●●●</div>
   </div>
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
-    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Value</div>
-    <div style="font-size: 0.6rem; letter-spacing: 2px; color: #2C4A3E;">●●●●●</div>
+    <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Cost</div>
+    <div style="font-size: 0.6rem; letter-spacing: 2px; color: #2C4A3E;">●○○○○</div>
   </div>
 </div>
 
@@ -267,7 +267,7 @@ The specific advantages of modern laminate: it does not etch from acids. It does
 
 The genuine limitations are two: laminate cannot be repaired if badly damaged — a deep scratch through the decorative layer requires section replacement, not sanding. And laminate is heat sensitive — a hot pan placed directly on the surface will cause irreversible burns.
 
-Cost: mid-range laminate worktops run between 8 000 and 22 000 Ft per linear metre for materials — making this the most accessible option at any quality level.
+Cost: mid-range laminate worktops run between €20 and €55 per linear metre for materials — making this the most accessible option at any quality level.
 
 <div style="margin: 1.75rem 0; border: 1px solid #E8D8A0; overflow: hidden;">
   <div style="background: #C8952A; padding: 0.4rem 1.25rem;">
@@ -333,11 +333,11 @@ Cost: mid-range laminate worktops run between 8 000 and 22 000 Ft per linear met
       <tr>
         <td style="padding: 0.6rem 0.75rem; background: #F5F0E8; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: #5A3A20; border-right: 1px solid #D8CFC4; white-space: nowrap;">Cost / m</td>
         <td style="padding: 0.6rem 0.5rem; text-align: center; background: #FAF0EA; color: #8B4A20; font-size: 0.7rem; border-right: 1px solid #D8CFC4;">Varies</td>
-        <td style="padding: 0.6rem 0.5rem; text-align: center; background: #FAF0EA; color: #8B4A20; font-size: 0.7rem; border-right: 1px solid #D8CFC4;">80–180K</td>
-        <td style="padding: 0.6rem 0.5rem; text-align: center; background: #FAF0EA; color: #8B4A20; font-size: 0.7rem; border-right: 1px solid #D8CFC4;">75–160K</td>
-        <td style="padding: 0.6rem 0.5rem; text-align: center; background: #EEF6F1; color: #2C5040; font-size: 0.7rem; border-right: 1px solid #D8CFC4;">25–55K</td>
-        <td style="padding: 0.6rem 0.5rem; text-align: center; background: #F5E8E4; color: #7A2A18; font-size: 0.7rem; border-right: 1px solid #D8CFC4;">150–350K</td>
-        <td style="padding: 0.6rem 0.5rem; text-align: center; background: #E8F2EE; color: #1E3D2A; font-size: 0.7rem; font-weight: 600;">8–22K</td>
+        <td style="padding: 0.6rem 0.5rem; text-align: center; background: #FAF0EA; color: #8B4A20; font-size: 0.7rem; border-right: 1px solid #D8CFC4;">€200–450</td>
+        <td style="padding: 0.6rem 0.5rem; text-align: center; background: #FAF0EA; color: #8B4A20; font-size: 0.7rem; border-right: 1px solid #D8CFC4;">€190–400</td>
+        <td style="padding: 0.6rem 0.5rem; text-align: center; background: #EEF6F1; color: #2C5040; font-size: 0.7rem; border-right: 1px solid #D8CFC4;">€60–140</td>
+        <td style="padding: 0.6rem 0.5rem; text-align: center; background: #F5E8E4; color: #7A2A18; font-size: 0.7rem; border-right: 1px solid #D8CFC4;">€380–880</td>
+        <td style="padding: 0.6rem 0.5rem; text-align: center; background: #E8F2EE; color: #1E3D2A; font-size: 0.7rem; font-weight: 600;">€20–55</td>
       </tr>
     </tbody>
   </table>
