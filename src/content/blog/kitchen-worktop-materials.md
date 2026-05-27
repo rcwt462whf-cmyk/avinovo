@@ -62,6 +62,8 @@ The people who love marble worktops and never regret them are those who understa
 
 ## Quartz
 
+![Your quartz kitchen worktop — engineered stone surface in a bright modern kitchen](/images/kitchen-worktops/quartz.jpg)
+
 <div style="display: flex; flex-wrap: wrap; gap: 1px; background: #D8CFC4; border: 1px solid #D8CFC4; margin: 1.75rem 0 2rem; overflow: hidden;">
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
     <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Scratch</div>
@@ -103,6 +105,8 @@ Cost: mid-range quartz worktops run between 80 000 and 180 000 Ft per linear met
 ---
 
 ## Granite
+
+![Your granite kitchen worktop — dark speckled stone surface with natural crystalline texture](/images/kitchen-worktops/granite.jpg)
 
 <div style="display: flex; flex-wrap: wrap; gap: 1px; background: #D8CFC4; border: 1px solid #D8CFC4; margin: 1.75rem 0 2rem; overflow: hidden;">
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
@@ -188,6 +192,8 @@ Cost: solid oak worktop in 40mm thickness runs between 25 000 and 55 000 Ft per 
 
 ## Concrete
 
+![Your concrete kitchen worktop — flat matte mineral surface in an industrial kitchen](/images/kitchen-worktops/concrete.jpg)
+
 <div style="display: flex; flex-wrap: wrap; gap: 1px; background: #D8CFC4; border: 1px solid #D8CFC4; margin: 1.75rem 0 2rem; overflow: hidden;">
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
     <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Scratch</div>
@@ -229,6 +235,8 @@ Cost: poured-in-place concrete is among the most expensive options — between 1
 ---
 
 ## Laminate
+
+![Your laminate kitchen worktop — clean stone-effect surface in a contemporary kitchen](/images/kitchen-worktops/laminate.jpg)
 
 <div style="display: flex; flex-wrap: wrap; gap: 1px; background: #D8CFC4; border: 1px solid #D8CFC4; margin: 1.75rem 0 2rem; overflow: hidden;">
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
