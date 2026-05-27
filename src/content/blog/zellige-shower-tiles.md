@@ -8,7 +8,7 @@ tags: ["zellige tiles", "bathroom design", "shower tiles", "tile trends", "Moroc
 image: "/images/zellige/cover.jpg"
 heroImage: "/images/zellige/cover-hero.jpg"
 imageAlt: "Your bathroom with zellige tiles catching light on an uneven hand-glazed surface"
-featured: false
+featured: true
 affiliate: false
 ---
 
