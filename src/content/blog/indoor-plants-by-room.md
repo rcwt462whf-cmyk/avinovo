@@ -5,7 +5,7 @@ pubDate: "2026-05-28"
 author: "Avinovo"
 category: "Interior Design"
 tags: ["indoor plants", "houseplants", "plant care", "interior design", "fiddle leaf fig", "monstera", "home decor"]
-image: "/images/indoor-plants/cover.jpg"
+image: "/images/indoor-plants/cover.png"
 heroImage: "/images/indoor-plants/cover-hero.jpg"
 imageAlt: "Your living room with a large monstera plant in bright indirect light beside a window"
 featured: true
