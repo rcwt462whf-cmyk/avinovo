@@ -18,8 +18,6 @@ The kitchen worktop is the most used horizontal surface in your home. It gets ho
 
 ## Marble
 
-![Your marble kitchen worktop — white Carrara veining in morning light](/images/kitchen-worktops/marble.jpg)
-
 <div style="display: flex; flex-wrap: wrap; gap: 1px; background: #D8CFC4; border: 1px solid #D8CFC4; margin: 1.75rem 0 2rem; overflow: hidden;">
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
     <div style="font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: #8B7355; margin-bottom: 0.35rem;">Scratch</div>
@@ -235,8 +233,6 @@ Cost: poured-in-place concrete is among the most expensive options — between �
 ---
 
 ## Laminate
-
-![Your laminate kitchen worktop — clean stone-effect surface in a contemporary kitchen](/images/kitchen-worktops/laminate.jpg)
 
 <div style="display: flex; flex-wrap: wrap; gap: 1px; background: #D8CFC4; border: 1px solid #D8CFC4; margin: 1.75rem 0 2rem; overflow: hidden;">
   <div style="flex: 1; min-width: 60px; background: #FAF7F2; padding: 0.7rem 0.5rem; text-align: center;">
