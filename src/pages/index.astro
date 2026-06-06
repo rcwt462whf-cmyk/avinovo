@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 const allPosts = await getCollection('blog');
 const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const featuredPosts = sortedPosts.filter(p => p.data.featured).slice(0, 6);
-const recentPosts = sortedPosts.filter(p => !p.data.featured).slice(0, 4);
+const recentPosts = sortedPosts.filter(p => !featuredPosts.includes(p)).slice(0, 4);
 ---
 
 <BaseLayout
