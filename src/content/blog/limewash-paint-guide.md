@@ -7,7 +7,7 @@ category: "DIY"
 tags: ["limewash paint", "wall paint", "feature wall", "DIY interior", "lime wash", "textured walls", "interior design"]
 image: "/images/limewash/cover.jpg"
 heroImage: "/images/limewash/cover-hero.jpg"
-imageAlt: "Close-up of limewash paint on a wall showing the cloudy layered texture and depth of colour variation"
+imageAlt: "A terracotta limewash bedroom with an arched alcove, warm plants and earthy bedding"
 featured: true
 pinTitle: "Limewash Paint Guide: How to Apply It and Get the Depth Right"
 pinAngles:
@@ -127,7 +127,7 @@ Dilute the limewash to a consistency that feels like thin single cream — thin 
 
 Work in sections roughly a metre wide, floor to ceiling. The crosshatch stroke is the technique: apply paint diagonally in one direction, then cross over it in the opposite direction before the first strokes dry. The overlap of wet over wet creates the blended, cloudy depth. If the first strokes dry before you can cross them, the result will be streaky rather than diffused. Work quickly, keep the wall damp if needed, and do not go back over sections you have already completed — the drag marks from re-working dry limewash are very visible.
 
-![A wide brush mid-crosshatch stroke on a wall showing the X-pattern technique that builds limewash's characteristic cloud depth](/images/limewash/application.jpg)
+![A bathroom with blue-green limewash walls showing the cloudy, layered texture of the finish in a wet-room context](/images/limewash/bathroom.png)
 
 <div style="margin: 1.5rem 0; border-left: 3px solid #7A5060; padding: 0.85rem 1.1rem; background: #F8F3F5;">
   <p style="font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #7A5060; margin-bottom: 0.35rem;">Watch out for</p>
@@ -201,7 +201,7 @@ Limewash colour behaves differently to emulsion colour. Because each coat is tra
 
 The general principle for colour choice: warm tones are more forgiving in UK light conditions, which tend toward grey and flat for much of the year. A terracotta or wheat limewash reads as intentionally warm even in a north-facing room. Cool tones — particularly dusty blue and muted green — require good natural light to look their best; in a poorly lit room they can pull grey and flat in a way that loses the warmth that makes limewash appealing in the first place. Order a tester pot, apply it to the actual wall as a two-coat test, and assess at different times of day before committing.
 
-![Four limewash colour swatches arranged side by side — terracotta, warm cream, dusty sage and charcoal — showing the tonal range of the finish](/images/limewash/colour.jpg)
+![A warm ochre limewash bedroom with terracotta bedding, green velvet headboard and golden pendant lighting](/images/limewash/bedroom-warm.jpg)
 
 ---
 
@@ -261,7 +261,7 @@ The most common limewash failure is impatience between coats. The finish needs t
 
 The second failure point is trying to make it look even. If you are applying limewash and thinking about how to eliminate the variation — working over areas again to blend them, trying to achieve a smooth, consistent colour — you are fighting the material rather than working with it. The variation is not a problem to correct. The best limewash results come from accepting the imperfection of each coat and trusting that the build-up will resolve into depth rather than evenness.
 
-![A finished room corner with limewash walls, simple furniture, and natural light from one side showing the texture shifting across the surface](/images/limewash/room.jpg)
+![A neutral limewash living room with warm cream walls, two bouclé chairs and a sideboard, natural light from the side showing texture variation](/images/limewash/room.jpg)
 
 ---
 
