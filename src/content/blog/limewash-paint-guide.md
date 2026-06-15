@@ -7,7 +7,7 @@ category: "DIY"
 tags: ["limewash paint", "wall paint", "feature wall", "DIY interior", "lime wash", "textured walls", "interior design"]
 image: "/images/limewash/cover.jpg"
 heroImage: "/images/limewash/cover-hero.jpg"
-imageAlt: "A terracotta limewash bedroom with an arched alcove, warm plants and earthy bedding"
+imageAlt: "A sage green limewash living room with sofa, rattan chair and gold pendant lighting"
 featured: true
 pinTitle: "Limewash Paint Guide: How to Apply It and Get the Depth Right"
 pinAngles:
