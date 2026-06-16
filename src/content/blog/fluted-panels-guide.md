@@ -89,8 +89,6 @@ The kitchen island application deserves particular attention. A standard kitchen
 
 ![A living room with an arched alcove lined in vertical fluted wood panels, backlit from behind, with a curved sofa and pampas grass arrangement](/images/fluted-panels/living-room.jpg)
 
-![A kitchen with a green fluted island, bar stools and marble backsplash showing the furniture-quality effect of ribbed panel cladding](/images/fluted-panels/island.png)
-
 ---
 
 ## Choosing the Right Panel Width
@@ -173,6 +171,8 @@ As a general rule, the smaller the room the narrower the rib. A 40mm rib in a st
 MDF is where most people should start. It is the most widely available, the cheapest, the easiest to cut and the most consistent to paint — the surface is smoother than solid wood and takes a flawless eggshell or satin finish when properly primed. The key word is properly. MDF is extremely absorbent and will drink paint unevenly if applied directly over bare board. Two coats of MDF primer before any colour goes on is not optional. Skip the primer step and the paint will be patchy across the groove edges and the flat rib faces in a way that is very difficult to correct after the fact.
 
 Solid wood fluted panels — usually pine, oak, or tulipwood — are the premium option. They have a weight and warmth that MDF cannot replicate, the shadow lines are slightly crisper because the edges are harder, and they can be finished with an oil or stain rather than paint for a natural-wood look. The trade-off is cost and workability: solid wood panels are heavier, more expensive and more sensitive to the ambient humidity of the room. They are an excellent choice where you want the tactile quality of real timber and have the budget to match.
+
+![A kitchen with a green fluted island, bar stools and marble backsplash showing the furniture-quality effect of ribbed panel cladding](/images/fluted-panels/island.png)
 
 ---
 
