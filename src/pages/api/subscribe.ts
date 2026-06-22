@@ -1,35 +1,42 @@
 import type { APIRoute } from 'astro';
 import { Resend } from 'resend';
+import { createSubscribeToken } from '../../lib/subscribe-token';
+import { confirmEmail } from '../../lib/emails';
 
-export const POST: APIRoute = async ({ request }) => {
+export const prerender = false; // on-demand function (needs server runtime)
+
+const json = (obj: unknown, status: number) =>
+  new Response(JSON.stringify(obj), { status, headers: { 'Content-Type': 'application/json' } });
+
+export const POST: APIRoute = async ({ request, site }) => {
   const data = await request.formData();
-  const email = data.get('email')?.toString().trim();
+  const email = data.get('email')?.toString().trim().toLowerCase();
 
-  if (!email || !email.includes('@')) {
-    return new Response(JSON.stringify({ error: 'Valid email required.' }), {
-      status: 400,
-      headers: { 'Content-Type': 'application/json' },
-    });
+  if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+    return json({ error: 'Please enter a valid email address.' }, 400);
   }
 
-  const resend = new Resend(import.meta.env.RESEND_API_KEY);
-  const audienceId = import.meta.env.RESEND_AUDIENCE_ID;
+  const apiKey = import.meta.env.RESEND_API_KEY;
+  const secret = import.meta.env.SUBSCRIBE_TOKEN_SECRET;
+  if (!apiKey || !secret) {
+    console.error('[subscribe] missing RESEND_API_KEY or SUBSCRIBE_TOKEN_SECRET');
+    return json({ error: 'Something went wrong. Try again.' }, 500);
+  }
 
-  const { error } = await resend.contacts.create({
-    email,
-    audienceId,
-    unsubscribed: false,
-  });
+  // Double opt-in: do NOT add to the audience yet — only send a confirmation link.
+  const base = (site?.toString().replace(/\/$/, '')) || import.meta.env.SITE || 'https://avinovo.com';
+  const from = import.meta.env.RESEND_FROM || 'Avinovo <hello@avinovo.com>';
+  const token = await createSubscribeToken(email, secret);
+  const confirmUrl = `${base}/api/confirm?token=${encodeURIComponent(token)}`;
+
+  const resend = new Resend(apiKey);
+  const { subject, html } = confirmEmail(confirmUrl);
+  const { error } = await resend.emails.send({ from, to: email, subject, html });
 
   if (error) {
-    return new Response(JSON.stringify({ error: 'Something went wrong. Try again.' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    console.error('[subscribe] resend send failed:', error);
+    return json({ error: 'Something went wrong. Try again.' }, 500);
   }
 
-  return new Response(JSON.stringify({ success: true }), {
-    status: 200,
-    headers: { 'Content-Type': 'application/json' },
-  });
+  return json({ success: true }, 200);
 };

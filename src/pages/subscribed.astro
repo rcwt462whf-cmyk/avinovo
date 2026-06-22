@@ -1,0 +1,72 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Subscription confirmed"
+  description="You're subscribed to Avinovo."
+>
+  <div class="confirm-page container">
+    <div class="confirm-card">
+      <p class="confirm-eyebrow">Avinovo newsletter</p>
+      <h1 id="confirm-title">You're in</h1>
+      <p id="confirm-body">
+        Your subscription is confirmed. Expect considered interior ideas — and nothing else — in your inbox.
+      </p>
+      <a class="confirm-link" href="/">Browse the latest &rarr;</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .confirm-page {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-xl) var(--space-md);
+  }
+  .confirm-card {
+    max-width: 540px;
+    text-align: center;
+  }
+  .confirm-eyebrow {
+    font-family: var(--font-serif);
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-sm);
+  }
+  .confirm-card h1 {
+    font-family: var(--font-serif);
+    color: var(--color-text);
+    margin: 0 0 var(--space-sm);
+  }
+  .confirm-card p#confirm-body {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0 0 var(--space-md);
+  }
+  .confirm-link {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
+</style>
+
+<script>
+  // The /api/confirm endpoint redirects here with a ?status= so this page can
+  // stay static while still reflecting the outcome.
+  const status = new URLSearchParams(location.search).get('status');
+  const title = document.getElementById('confirm-title');
+  const body = document.getElementById('confirm-body');
+  if (status === 'invalid' && title && body) {
+    title.textContent = 'This link has expired';
+    body.textContent =
+      'Your confirmation link is invalid or older than 24 hours. Head back and subscribe again — it only takes a moment.';
+  } else if (status === 'error' && title && body) {
+    title.textContent = 'Something went wrong';
+    body.textContent =
+      "We couldn't confirm your subscription just now. Please try again in a little while.";
+  }
+</script>
