@@ -1,3 +1,4 @@
 {
-  "framework": "astro"
+  "framework": "astro",
+  "buildCommand": "astro build && find .vercel/output/functions -name '.vc-config.json' -exec sed -i'' -e 's/nodejs18.x/nodejs20.x/g' {} +"
 }
