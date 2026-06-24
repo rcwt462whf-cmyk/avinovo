@@ -5,5 +5,5 @@ node_modules/
 !.env.example
 .vercel
 .astro/
-src/content/blog/checkerboard-floors.md
-public/images/checkerboard-floors/
+src/content/blog/warm-white-vs-cool-white.md
+src/content/blog/mixing-wood-tones.md
