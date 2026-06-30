@@ -93,6 +93,33 @@ Lime putty + pigment + water — not chalk paint, not textured emulsion. Translu
 
 ---
 
+## Front Door Colour Guide
+**URL:** /blog/front-door-colour-guide | **Category:** Exterior
+
+Read the house before the colour chart: brick/render undertone, roof tone, era. Six colour families with pairings — Heritage Green (brass, red/buff brick, the safest deliberate choice), Off-Black/Charcoal (chrome or matte black, pale render), Deep Navy (brass, red brick, near-black from distance), Terracotta/Burnt Sienna (matte black/bronze, buff stone, most dismissed-without-trying option), Soft Sage/Muted Olive (brushed brass/black, contemporary new-builds), Statement Yellow/Red (black hardware, cottage doors). Cost: DIY €35–70, premium paint €90–140, professional spray €150–320, new composite door €900–2,500. Satin/eggshell standard finish; full gloss unforgiving of imperfections. Three mistakes: choosing colour from a phone screen not the actual door in actual light, wrong paint type for material (timber needs breathable, composite/uPVC needs specialist acrylic), chasing trend over house era.
+
+**Pin angles:** read your brick before the colour chart / heritage green is the safest deliberate choice / the south-facing door UV problem / sample card test before committing / composite vs repaint cost / hardware finish that echoes the door colour / terracotta door against buff stone
+
+---
+
+## Cabinet & Door Hardware Finishes
+**URL:** /blog/hardware-finish-guide | **Category:** Hardware
+
+Five finishes scored on tarnish/fingerprints/versatility/durability/cost. Lacquered brass: fixed shine, lacquer chips and fails unevenly, never use brass polish on it, €12–30/handle. Unlacquered "living" brass: tarnishes/patinas on purpose by design, unique wear pattern per kitchen, effectively unbreakable since no coating to chip, €18–45/handle. Matte black: most versatile, worst fingerprint visibility (biggest reported hardware regret), check PVD vs sprayed powder coat — sprayed chips at edges, €5–35/handle. Brushed nickel: underrated, hides fingerprints/scratches via brushed texture, warmer than chrome, €8–20/handle. Chrome: most durable and cheapest, worst fingerprints, cold/clinical look, €4–15/handle.
+
+**Pin angles:** the matte black fingerprint problem nobody warns you about / unlacquered brass ages on purpose / PVD vs sprayed coating test / brushed nickel is underrated / never polish lacquered brass / cost per handle across five finishes / chrome is durable but shows everything
+
+---
+
+## Fireplace Surround Guide
+**URL:** /blog/fireplace-surround-guide | **Category:** Living Room
+
+Four surrounds scored on heat/upkeep/drama/era-fit/cost. Marble: historic default, unmatched heat performance, stains from soot if unsealed, €800–4,000. Limestone/travertine: most era-flexible, softer texture than marble, hides marks better, €600–2,200. Plaster/render: lowest maintenance, currently most-requested finish, must be heat-rated near firebox (common safety mistake), €300–900. Exposed brick: cheapest when original brick already exists under paint, near-zero maintenance, commits room to a narrow rustic/industrial aesthetic, €150–500 to strip and repoint. Mantel styling rule: three height tiers (tall anchor / mid object / low horizontal), odd numbers, leave a third of the shelf empty, lean large art rather than hang flush. Three mistakes: surround style vs room architecture mismatch, over-centring furniture on the fireplace, skipping heat-rated adhesive/plaster check.
+
+**Pin angles:** the mantel rule of three heights / plaster is the lowest-maintenance surround / why marble needs annual sealing near the firebox / exposed brick is often already there for free / heat-rated plaster mistake / marble vs limestone vs plaster vs brick / leave a third of the mantel empty
+
+---
+
 ## Fluted Panels Guide
 **URL:** /blog/fluted-panels-guide | **Category:** DIY
 
