@@ -102,24 +102,6 @@ Read the house before the colour chart: brick/render undertone, roof tone, era. 
 
 ---
 
-## Cabinet & Door Hardware Finishes
-**URL:** /blog/hardware-finish-guide | **Category:** Hardware
-
-Five finishes scored on tarnish/fingerprints/versatility/durability/cost. Lacquered brass: fixed shine, lacquer chips and fails unevenly, never use brass polish on it, €12–30/handle. Unlacquered "living" brass: tarnishes/patinas on purpose by design, unique wear pattern per kitchen, effectively unbreakable since no coating to chip, €18–45/handle. Matte black: most versatile, worst fingerprint visibility (biggest reported hardware regret), check PVD vs sprayed powder coat — sprayed chips at edges, €5–35/handle. Brushed nickel: underrated, hides fingerprints/scratches via brushed texture, warmer than chrome, €8–20/handle. Chrome: most durable and cheapest, worst fingerprints, cold/clinical look, €4–15/handle.
-
-**Pin angles:** the matte black fingerprint problem nobody warns you about / unlacquered brass ages on purpose / PVD vs sprayed coating test / brushed nickel is underrated / never polish lacquered brass / cost per handle across five finishes / chrome is durable but shows everything
-
----
-
-## Fireplace Surround Guide
-**URL:** /blog/fireplace-surround-guide | **Category:** Living Room
-
-Four surrounds scored on heat/upkeep/drama/era-fit/cost. Marble: historic default, unmatched heat performance, stains from soot if unsealed, €800–4,000. Limestone/travertine: most era-flexible, softer texture than marble, hides marks better, €600–2,200. Plaster/render: lowest maintenance, currently most-requested finish, must be heat-rated near firebox (common safety mistake), €300–900. Exposed brick: cheapest when original brick already exists under paint, near-zero maintenance, commits room to a narrow rustic/industrial aesthetic, €150–500 to strip and repoint. Mantel styling rule: three height tiers (tall anchor / mid object / low horizontal), odd numbers, leave a third of the shelf empty, lean large art rather than hang flush. Three mistakes: surround style vs room architecture mismatch, over-centring furniture on the fireplace, skipping heat-rated adhesive/plaster check.
-
-**Pin angles:** the mantel rule of three heights / plaster is the lowest-maintenance surround / why marble needs annual sealing near the firebox / exposed brick is often already there for free / heat-rated plaster mistake / marble vs limestone vs plaster vs brick / leave a third of the mantel empty
-
----
-
 ## Fluted Panels Guide
 **URL:** /blog/fluted-panels-guide | **Category:** DIY
 

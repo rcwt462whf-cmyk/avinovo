@@ -6,4 +6,5 @@ node_modules/
 .vercel
 .astro/
 src/content/blog/warm-white-vs-cool-white.md
-src/content/blog/mixing-wood-tones.md
+src/content/blog/hardware-finish-guide.md
+src/content/blog/fireplace-surround-guide.md
